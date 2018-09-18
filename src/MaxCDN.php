@@ -55,7 +55,7 @@ class MaxCDN {
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER , TRUE);
 		
 		// set curl timeout
-		curl_setopt($ch, CURLOPT_TIMEOUT, 60); 
+		curl_setopt($ch, CURLOPT_TIMEOUT, 120); 
 
 		// set curl custom request type if not standard
 		if ($method_type != "GET" && $method_type != "POST") {
